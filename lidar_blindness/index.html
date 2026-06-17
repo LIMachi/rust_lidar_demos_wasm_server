@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Loading Demo...</title>
+    <style>
+        html, body { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #222; }
+        canvas { width: 100%; height: 100%; }
+    </style>
+
+    
+<script type="module">
+import init, * as bindings from '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-a455492c70c330e8.js';
+const wasm = await init({ module_or_path: '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-a455492c70c330e8_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+<link rel="modulepreload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-a455492c70c330e8.js" crossorigin="anonymous" integrity="sha384-Vs3vKWrIsHLbNQRXxqqLAhkPvubx/Qg95AiqwTI+2LjXA/Wh7IcKMQruJcbpKSse"><link rel="preload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-a455492c70c330e8_bg.wasm" crossorigin="anonymous" integrity="sha384-6VZL8ZOGQ7gRBtX0n/C+7lIt7REyl3ThTH3mM1hOLOZFOgAKp8dGUh0ybNuEyXt9" as="fetch" type="application/wasm"></head>
+<body>
+    <canvas id="lidar_blindness"></canvas>
+</body>
+</html>
