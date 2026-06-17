@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Lidar Visualizer</title>
+    <style>
+        html, body { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #222; }
+        canvas { width: 100%; height: 100%; }
+    </style>
+
+    
+<script type="module">
+import init, * as bindings from '/rust_lidar_demos_wasm_server/demo-90170259533cfd04.js';
+const wasm = await init({ module_or_path: '/rust_lidar_demos_wasm_server/demo-90170259533cfd04_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+<link rel="modulepreload" href="/rust_lidar_demos_wasm_server/demo-90170259533cfd04.js" crossorigin="anonymous" integrity="sha384-Lpt1hoehJ+iKKlBbltkIQWeb+88xJNUULuWmQMJ1gC1VxC8WDaly+K7Hq9kGTXar"><link rel="preload" href="/rust_lidar_demos_wasm_server/demo-90170259533cfd04_bg.wasm" crossorigin="anonymous" integrity="sha384-ZoHftsMq4Gqcld9rhS0qrHhjD4Ag3aaFLwOHWl1wxdF6vPXqvILjbxGkZo9BHtoi" as="fetch" type="application/wasm"></head>
+<body>
+<canvas id="lidar_blind_spots_demo"></canvas>
+</body>
+</html>
