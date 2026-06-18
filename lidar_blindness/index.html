@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Loading Demo...</title>
     <style>
         html, body { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #222; }
@@ -11,8 +10,8 @@
 
     
 <script type="module">
-import init, * as bindings from '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-24e58aa4112f4067.js';
-const wasm = await init({ module_or_path: '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-24e58aa4112f4067_bg.wasm' });
+import init, * as bindings from '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-1582b8c8f8d694ee.js';
+const wasm = await init({ module_or_path: '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-1582b8c8f8d694ee_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -21,7 +20,7 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-<link rel="modulepreload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-24e58aa4112f4067.js" crossorigin="anonymous" integrity="sha384-72G5bWZMKyJSCQ+uKzKpu3gsKSugDjc7bcKbmfhDR/hU8YnKGhMXVBWpmdYb6WiK"><link rel="preload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-24e58aa4112f4067_bg.wasm" crossorigin="anonymous" integrity="sha384-IELgo/HUeitrBXmw6EITfwIV7OGtjqJ8Mbp+rhv91Z/e1AdzxNaVH/mwTyvJaPDX" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-1582b8c8f8d694ee.js" crossorigin="anonymous" integrity="sha384-l2qLx9J63GzhP8kSshgv1VHnJVL8xN8sonRyTXk3Wa4InQdSGMyVrk7+leNbSA16"><link rel="preload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-1582b8c8f8d694ee_bg.wasm" crossorigin="anonymous" integrity="sha384-bwkaoCVRkKtAh3SEM+opDJ+0K+0c8Ja7DOvCmCuaLi9qKFlxNsT4KdOTltXJvWHw" as="fetch" type="application/wasm"></head>
 <body>
     <canvas id="lidar_blindness"></canvas>
 </body>
