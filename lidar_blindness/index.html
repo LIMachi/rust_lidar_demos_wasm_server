@@ -11,8 +11,8 @@
 
     
 <script type="module">
-import init, * as bindings from '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-d0f7e36bc8ce9289.js';
-const wasm = await init({ module_or_path: '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-d0f7e36bc8ce9289_bg.wasm' });
+import init, * as bindings from '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-7c4a04306f89e591.js';
+const wasm = await init({ module_or_path: '/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-7c4a04306f89e591_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -21,7 +21,7 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-<link rel="modulepreload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-d0f7e36bc8ce9289.js" crossorigin="anonymous" integrity="sha384-72G5bWZMKyJSCQ+uKzKpu3gsKSugDjc7bcKbmfhDR/hU8YnKGhMXVBWpmdYb6WiK"><link rel="preload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-d0f7e36bc8ce9289_bg.wasm" crossorigin="anonymous" integrity="sha384-4i80QzAiWXggRKfx+qpmo6iyNO1SdzNNz/YlSAZAG9N85ZUw8W5KoXs7/3sTtj6s" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-7c4a04306f89e591.js" crossorigin="anonymous" integrity="sha384-72G5bWZMKyJSCQ+uKzKpu3gsKSugDjc7bcKbmfhDR/hU8YnKGhMXVBWpmdYb6WiK"><link rel="preload" href="/rust_lidar_demos_wasm_server/lidar_blindness/lidar_blindness-7c4a04306f89e591_bg.wasm" crossorigin="anonymous" integrity="sha384-qQXhL8YiF2FJhlfB4ZrnS47Ic/gUjWWaT7S6QK/eW0+t0cWOrUjnCr06EB0f1gYb" as="fetch" type="application/wasm"></head>
 <body>
     <canvas id="lidar_blindness"></canvas>
 </body>
