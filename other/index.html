@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Loading Demo...</title>
     <style>
         html, body { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #222; }
@@ -10,8 +11,8 @@
 
     
 <script type="module">
-import init, * as bindings from '/rust_lidar_demos_wasm_server/other/other-7288447b594ca0.js';
-const wasm = await init({ module_or_path: '/rust_lidar_demos_wasm_server/other/other-7288447b594ca0_bg.wasm' });
+import init, * as bindings from '/rust_lidar_demos_wasm_server/other/other-132983a6d22dc757.js';
+const wasm = await init({ module_or_path: '/rust_lidar_demos_wasm_server/other/other-132983a6d22dc757_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -20,7 +21,7 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-<link rel="modulepreload" href="/rust_lidar_demos_wasm_server/other/other-7288447b594ca0.js" crossorigin="anonymous" integrity="sha384-fDBQwndKERJBTLOO6dt129GgOem3Sa4Xl4urbEhNcIo8sUmP41eVzVLWAmd61hYq"><link rel="preload" href="/rust_lidar_demos_wasm_server/other/other-7288447b594ca0_bg.wasm" crossorigin="anonymous" integrity="sha384-09CtAu2G0aPKLMZ9Bh0ydF9uHQSGUK1VUnbsdCObOO9SUB8xhnLR9vj0eQqnPNgj" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/rust_lidar_demos_wasm_server/other/other-132983a6d22dc757.js" crossorigin="anonymous" integrity="sha384-0N+3ukTNr/U/3QG++EkcLALkBImIqWJqUHIappznCsZcfaRYM3yChQFFUEPZNEUE"><link rel="preload" href="/rust_lidar_demos_wasm_server/other/other-132983a6d22dc757_bg.wasm" crossorigin="anonymous" integrity="sha384-os/Pkk3BiXAn/xckHjU5TZk7/tOaDt8J2sMxS6ltuMS9op4R+PcWjBv/AxadcbH8" as="fetch" type="application/wasm"></head>
 <body>
     <canvas id="other"></canvas>
 </body>
